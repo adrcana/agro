@@ -60,6 +60,7 @@ group :test do
 end
 
 group :production do
+  #voy a agregar gemas de produccion
   gem 'pg'
   gem 'rails_12factor'
 end
