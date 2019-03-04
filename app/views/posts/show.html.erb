@@ -1,0 +1,10 @@
+<h1>Post subido!</h1>
+<p>
+  Titulo: <%= @post.titulo %>
+</p>
+<p>
+  Contenido: <%= @post.descripcion %>
+</p>
+
+ <%= link_to "Volver a indice de posts", posts_path %>
+ <%= link_to "Editar Post", edit_post_path(@post.id) %>

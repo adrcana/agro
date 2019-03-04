@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th> Titulo </th><th> Descripcion </th>
+  </tr>
+  <% @posts.each do |post| %>
+  <tr>
+    <td><%= post.titulo%></td><td><%= post.descripcion%></td>
+    <td><%= link_to "Editar Post", edit_post_path(post.id) %> </td>
+    <td><%= link_to "Mostrar Post",post_path(post) %></td>
+    <td><%= link_to "Eliminar Post", post_path(post), method: :delete, data: {confirm: "Seguro?" } %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= link_to "Crear nuevo post", new_post_path %>

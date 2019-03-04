@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'pages#welcome'
   
   get 'pages/peppopig', to: "pages#peppopig"
+  
+  resources :posts
 end
