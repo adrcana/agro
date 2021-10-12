@@ -7,7 +7,7 @@ ruby '2.4.4'
 gem 'rails', '~> 5.2.2'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 5.5'
 
 # Use SCSS for stylesheetsB
 gem 'bootstrap-sass', '~> 3.4.1'
